@@ -9,6 +9,7 @@ Icon?
 ehthumbs.db
 Thumbs.db
 *.c~
+*.gitignore~
 # Compiled source #
 ###################
 *.com
