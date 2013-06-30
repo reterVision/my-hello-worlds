@@ -1,12 +1,11 @@
 #! /usr/bin/env python
-
 import sys
 
-def hello_world(name):
-    print 'Hello ', name
 
-if __name__ == "__main__":
+if sys.version_info[:2] <= (2, 5):
     print 'Please enter your name: '
     name = sys.stdin.readline()
-    hello_world(name)
-    
+    print 'Hello ', name
+else:
+    import hello3
+    hello3.main()
